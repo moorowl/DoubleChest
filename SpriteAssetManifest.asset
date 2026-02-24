@@ -9,16 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1876717734, guid: 8755fc0f8990e9f418149df4a482da57, type: 3}
+  m_Script: {fileID: 1876717734, guid: 292700ef68995bdb2163e35989fc7eb0, type: 3}
   m_Name: SpriteAssetManifest
   m_EditorClassIdentifier: 
   spriteAssets:
   - {fileID: 11400000, guid: da4b038a1260fd84bb133c324bdbb622, type: 2}
-  - {fileID: 11400000, guid: f3ec0fdb73b59ec49be92dee80f981d6, type: 2}
+  - {fileID: 11400000, guid: cf67f736e21e66e4593ed67c6c36189f, type: 2}
   - {fileID: 11400000, guid: 6ee81603b11a66241b2400a2ffa30c19, type: 2}
   - {fileID: 11400000, guid: 2c9c072167fcedd409a31021b6119323, type: 2}
   - {fileID: 11400000, guid: 81505829762fa8842aaa3f61b9427a1a, type: 2}
   - {fileID: 11400000, guid: fcb33c99db966ad4f8e4625a0e342835, type: 2}
+  - {fileID: 11400000, guid: 3ce279f297e0532448dd447b6c06473b, type: 2}
   - {fileID: 11400000, guid: aae76fa07419d5f458468490c2eaaf28, type: 2}
   - {fileID: 11400000, guid: ecd98623ec8fcff41accd99904494eed, type: 2}
   - {fileID: 11400000, guid: c8740641b20b7014c9868c5dd9dff258, type: 2}

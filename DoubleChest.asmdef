@@ -133,7 +133,8 @@
         "WorldPatcher.dll",
         "XblPCSandbox.dll",
         "ZipSaveFolder.dll",
-        "0Harmony.dll"
+        "0Harmony.dll",
+        "ScriptableData.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [],

@@ -72,11 +72,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2317629230206472052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1908045241, guid: 8755fc0f8990e9f418149df4a482da57, type: 3}
+  m_Script: {fileID: 1908045241, guid: 292700ef68995bdb2163e35989fc7eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_asset: {fileID: 11400000, guid: da4b038a1260fd84bb133c324bdbb622, type: 2}
+  m_asset: {fileID: 0}
   skin: {fileID: 0}
+  m_assetRef:
+    m_address:
+      m_low: -178997877999467638
+      m_high: 2501427759062717371
+  skinRef:
+    m_address:
+      m_low: 0
+      m_high: 0
   color: {r: 1, g: 1, b: 1, a: 0.7019608}
   emissiveColor: {r: 1, g: 1, b: 1, a: 1}
   flashColor: {r: 0, g: 0, b: 0, a: 0}
@@ -84,6 +92,18 @@ MonoBehaviour:
   primaryGradientMap: {fileID: 0}
   secondaryGradientMap: {fileID: 0}
   tertiaryGradientMap: {fileID: 0}
+  primaryGradientMapRef:
+    m_address:
+      m_low: 0
+      m_high: 0
+  secondaryGradientMapRef:
+    m_address:
+      m_low: 0
+      m_high: 0
+  tertiaryGradientMapRef:
+    m_address:
+      m_low: 0
+      m_high: 0
   material: {fileID: 2100000, guid: e9579b7574bbaa146a669beeabfcbb75, type: 2}
   m_startAnimationHash: 0
   m_startVariantHash: 0
@@ -137,11 +157,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2360523385655520502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1908045241, guid: 8755fc0f8990e9f418149df4a482da57, type: 3}
+  m_Script: {fileID: 1908045241, guid: 292700ef68995bdb2163e35989fc7eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_asset: {fileID: 11400000, guid: da4b038a1260fd84bb133c324bdbb622, type: 2}
+  m_asset: {fileID: 0}
   skin: {fileID: 0}
+  m_assetRef:
+    m_address:
+      m_low: -178997877999467638
+      m_high: 2501427759062717371
+  skinRef:
+    m_address:
+      m_low: 0
+      m_high: 0
   color: {r: 1, g: 1, b: 1, a: 1}
   emissiveColor: {r: 1, g: 1, b: 1, a: 1}
   flashColor: {r: 0, g: 0, b: 0, a: 0}
@@ -149,6 +177,18 @@ MonoBehaviour:
   primaryGradientMap: {fileID: 0}
   secondaryGradientMap: {fileID: 0}
   tertiaryGradientMap: {fileID: 0}
+  primaryGradientMapRef:
+    m_address:
+      m_low: 0
+      m_high: 0
+  secondaryGradientMapRef:
+    m_address:
+      m_low: 0
+      m_high: 0
+  tertiaryGradientMapRef:
+    m_address:
+      m_low: 0
+      m_high: 0
   material: {fileID: 2100000, guid: 571bf3c761ee86c4f9d8e65be27151be, type: 2}
   m_startAnimationHash: 0
   m_startVariantHash: 0
@@ -286,7 +326,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4213435116030985893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -122692614, guid: 3519ac58e5ff54941a4a69512016923c, type: 3}
+  m_Script: {fileID: -122692614, guid: 548e3dd2d27c1e2d0bdf82f0889cb8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spritesToRotate:
@@ -302,27 +342,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 4213435116030985893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -237523161, guid: 3519ac58e5ff54941a4a69512016923c, type: 3}
+  m_Script: {fileID: -237523161, guid: 548e3dd2d27c1e2d0bdf82f0889cb8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spritesToReskin:
   - sprite: {fileID: 3280259561240904357}
-    skins:
-    - {fileID: 0}
-    - {fileID: 11400000, guid: e1628c5af179c1b4881339c74acd305b, type: 2}
-    - {fileID: 0}
-    - {fileID: 11400000, guid: f7a4dfbfcfff78645b3064beab073d98, type: 2}
-    - {fileID: 11400000, guid: 0d6238f8f7326134f9dbcfabdfdf2b2d, type: 2}
-    - {fileID: 11400000, guid: 6ee81603b11a66241b2400a2ffa30c19, type: 2}
-    - {fileID: 11400000, guid: 2c9c072167fcedd409a31021b6119323, type: 2}
-    - {fileID: 11400000, guid: cdf6e2092bbc0c14b9f84e935b178151, type: 2}
-    - {fileID: 11400000, guid: f3ec0fdb73b59ec49be92dee80f981d6, type: 2}
-    - {fileID: 11400000, guid: aae76fa07419d5f458468490c2eaaf28, type: 2}
-    - {fileID: 11400000, guid: 81505829762fa8842aaa3f61b9427a1a, type: 2}
-    - {fileID: 11400000, guid: c8740641b20b7014c9868c5dd9dff258, type: 2}
-    - {fileID: 11400000, guid: fcb33c99db966ad4f8e4625a0e342835, type: 2}
-    - {fileID: 11400000, guid: ecd98623ec8fcff41accd99904494eed, type: 2}
-    - {fileID: 11400000, guid: 9453c37a6a6508c4a9a174896ecb077f, type: 2}
+    skinsRefs:
+    - m_address:
+        m_low: 5991080393659546098
+        m_high: 4271389834578550088
+    - m_address:
+        m_low: -4488697422806872998
+        m_high: 6570977577387234184
+    - m_address:
+        m_low: 5991080393659546098
+        m_high: 4271389834578550088
+    - m_address:
+        m_low: 8675287480500805567
+        m_high: -7476811372150116261
+    - m_address:
+        m_low: 7004495114812930296
+        m_high: 3254941307458542585
+    - m_address:
+        m_low: 7360202418118202883
+        m_high: 1804997868998632475
+    - m_address:
+        m_low: -1309307258880129247
+        m_high: 2563412086840402697
+    - m_address:
+        m_low: 870368717898703369
+        m_high: 5873001071148726457
+    - m_address:
+        m_low: 7414299508515272502
+        m_high: -6982771382659170727
+    - m_address:
+        m_low: -3029668995723202656
+        m_high: 2931820003810625112
+    - m_address:
+        m_low: -6303783632006784983
+        m_high: 1907910756112771626
+    - m_address:
+        m_low: 8076275795459573313
+        m_high: 6409431344372025033
+    - m_address:
+        m_low: 7698019104614202521
+        m_high: 3830368719329223928
+    - m_address:
+        m_low: -3461882110642911709
+        m_high: -1347058954427315174
+    - m_address:
+        m_low: 631746832251470714
+        m_high: 9153508443266785705
 --- !u!114 &4387249671735727907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,12 +484,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8689770133529936764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1216031652, guid: 3519ac58e5ff54941a4a69512016923c, type: 3}
+  m_Script: {fileID: -1216031652, guid: 548e3dd2d27c1e2d0bdf82f0889cb8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weightMultiplier: 1
   useDiscreteOutlineColor: 0
-  entityMono: {fileID: 8382341062216727921}
   requiredFactionToInteract: 0
   optionalIcon: {fileID: 0}
   optionalOutlineController: {fileID: 0}

@@ -9,34 +9,62 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1297384836, guid: 8755fc0f8990e9f418149df4a482da57, type: 3}
-  m_Name: doubleChestBrown
+  m_Script: {fileID: 1297384836, guid: 292700ef68995bdb2163e35989fc7eb0, type: 3}
+  m_Name: doubleChestTeal
   m_EditorClassIdentifier: 
+  m_overload:
+    m_address:
+      m_low: 0
+      m_high: 0
+  m_address:
+    m_low: 631746832251470714
+    m_high: 9153508443266785705
+  m_dynamicCollections:
+    m_list: []
   m_defaultPrimaryGradientMap: {fileID: 0}
   m_defaultSecondaryGradientMap: {fileID: 0}
   m_defaultTertiaryGradientMap: {fileID: 0}
+  m_defaultPrimaryGradientMapRef:
+    m_address:
+      m_low: 0
+      m_high: 0
+  m_defaultSecondaryGradientMapRef:
+    m_address:
+      m_low: 0
+      m_high: 0
+  m_defaultTertiaryGradientMapRef:
+    m_address:
+      m_low: 0
+      m_high: 0
   m_editorHideEmissive: 0
-  m_targetAsset: {fileID: 11400000, guid: da4b038a1260fd84bb133c324bdbb622, type: 2}
+  m_targetAsset: {fileID: 0}
+  m_targetAssetRef:
+    m_address:
+      m_low: -178997877999467638
+      m_high: 2501427759062717371
   m_staticReplacementData:
     m_guid: 
     m_spriteData:
-      texture: {fileID: 2800000, guid: d6b050aad80fbd04ab89da5f27bfdfb1, type: 3}
+      texture: {fileID: 2800000, guid: a5bdfcbe7c432244083acaa3de6837cd, type: 3}
       emissiveTexture: {fileID: 0}
       normalTexture: {fileID: 0}
       pivot: {x: 0.25, y: 0.03125}
       positionalData: []
       inheritPivot: 1
     m_variants:
-    - texture: {fileID: 2800000, guid: 947c71581b8bae842b8c3b543e541e4c, type: 3}
+    - texture: {fileID: 2800000, guid: 9a7612229ab21e94499dbbea33e4c318, type: 3}
       emissiveTexture: {fileID: 0}
       normalTexture: {fileID: 0}
       pivot: {x: 0.5, y: 0}
       positionalData: []
       inheritPivot: 1
-    - texture: {fileID: 2800000, guid: 7c9a059a73bf9024e8457e86ff298be7, type: 3}
+    - texture: {fileID: 2800000, guid: 2e1926428ddb33246b519cf56df9b678, type: 3}
       emissiveTexture: {fileID: 0}
       normalTexture: {fileID: 0}
       pivot: {x: 0.25, y: 0.03125}
       positionalData: []
       inheritPivot: 1
   m_replacementData: []
+  references:
+    version: 2
+    RefIds: []

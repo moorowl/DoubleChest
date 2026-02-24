@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8238559616534443322}
   - component: {fileID: 4667677534439967612}
-  - component: {fileID: 7982583112765692471}
   - component: {fileID: -6319942198419764612}
   - component: {fileID: -4444038381661180450}
   - component: {fileID: -3573188152012920203}
@@ -29,6 +28,7 @@ GameObject:
   - component: {fileID: 6916249868156068294}
   - component: {fileID: 5979938115927094684}
   - component: {fileID: -4356794872372460155}
+  - component: {fileID: 565179732597885773}
   m_Layer: 0
   m_Name: DoubleChestEntity
   m_TagString: Untagged
@@ -65,18 +65,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orientationSupport: 0
   largeAnimationHistorySupport: 0
---- !u!114 &7982583112765692471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2739593553981858323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -762863004, guid: 9a1db145e9314404d8da91bdc1557235, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-6319942198419764612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +82,7 @@ MonoBehaviour:
   reduction: 0
   maxDamagePerHit: 1
   minDamagePerHit: 0
+  ignoreReductionWhenDamagedByDrill: 0
   level: {fileID: 0}
 --- !u!114 &-4444038381661180450
 MonoBehaviour:
@@ -104,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2739593553981858323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 282287656, guid: 3519ac58e5ff54941a4a69512016923c, type: 3}
+  m_Script: {fileID: 282287656, guid: 9a1db145e9314404d8da91bdc1557235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   overrideTimeBeforeDestroy: 0
@@ -143,7 +132,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2739593553981858323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 178800199, guid: 3519ac58e5ff54941a4a69512016923c, type: 3}
+  m_Script: {fileID: 178800199, guid: 9a1db145e9314404d8da91bdc1557235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playIdleAnimation: 1
@@ -376,6 +365,8 @@ MonoBehaviour:
   prefabTileSize: {x: 2, y: 1}
   prefabCornerOffset: {x: 0, y: 0}
   centerIsAtEntityPosition: 0
+  objectCanBeToggledToNewNonRotationOption: 0
+  toggledToNewNonRotationOptions: 0
   variationToPlace: 0
   canBePlacedOnPlayer: 0
   canBePlacedOnAnyWalkableTile: 1
@@ -396,6 +387,7 @@ MonoBehaviour:
   appearInMapUI: 0
   mapColor: {r: 0, g: 0, b: 0, a: 0}
   alignWithPlayerDirection: 0
+  displayPlaceableType: 0
 --- !u!114 &-3260986574597470288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,10 +427,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2739593553981858323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1089278989, guid: 3519ac58e5ff54941a4a69512016923c, type: 3}
+  m_Script: {fileID: -1089278989, guid: 9a1db145e9314404d8da91bdc1557235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 0
+  refreshStateOnNewDamageTaken: 0
 --- !u!114 &7571165797388755151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,6 +488,7 @@ MonoBehaviour:
   objectType: 800
   tags: 
   rarity: 0
+  salvageMultiplier: 1
   graphicalPrefab: {fileID: 4213435116030985893, guid: 02672cc8316a68549bf140a48b2c0994,
     type: 3}
   isCustomScenePrefab: 0
@@ -523,3 +517,15 @@ MonoBehaviour:
   - objectName: CopperBar
     amount: 5
   craftingTime: 0
+--- !u!114 &565179732597885773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2739593553981858323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2063762086, guid: 42043b6401ecc6a4580eb3242f3c184a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
