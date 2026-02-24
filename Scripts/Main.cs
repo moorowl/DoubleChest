@@ -13,13 +13,10 @@ namespace DoubleChest {
         }
 
         public void Init() {
-            var carpentersWorkbench = DatabaseConversionUtility.GetPrefabList(Manager.ecs.pugDatabase).First(prefab => prefab.ObjectInfo.objectID == ObjectID.Carpenter);
-            if (carpentersWorkbench.ObjectInfo.prefabInfos[0].ecsPrefab.TryGetComponent<CraftingAuthoring>(out var craftingAuthoring)) {
-                craftingAuthoring.canCraftObjects.Add(new CraftingAuthoring.CraftableObject {
-                    objectID = API.Authoring.GetObjectID("DoubleChest:DoubleChest"),
-                    amount = 1
-                });
-            }
+            InjectCraftableObject(ObjectID.Carpenter, new CraftingAuthoring.CraftableObject {
+                objectID = API.Authoring.GetObjectID("DoubleChest:DoubleChest"),
+                amount = 1
+            });
         }
 
         public void Shutdown() { }
@@ -27,11 +24,21 @@ namespace DoubleChest {
         public void ModObjectLoaded(Object obj) {
             if (obj is GameObject gameObject && gameObject.TryGetComponent<PooledGraphicalObject>(out var pooledGraphicalObject))
                 PooledGraphicalObjectConverter.Register(pooledGraphicalObject);
-
-            if (obj is TextDataBlock textDataBlock)
-	            textDataBlock.name = textDataBlock.name.Replace("-", ":");
         }
 
         public void Update() { }
+
+        private static void InjectCraftableObject(ObjectID existingCraftingStation, CraftingAuthoring.CraftableObject craftableObject) {
+            var craftingStationData = DatabaseConversionUtility.GetPrefabList(Manager.ecs.pugDatabase).First(prefab => prefab.ObjectInfo.objectID == existingCraftingStation);
+            var craftingStationAuthoring = craftingStationData.ObjectInfo.prefabInfos[0].ecsPrefab;
+            if (!craftingStationAuthoring.TryGetComponent<CraftingAuthoring>(out var craftingAuthoring))
+                return;
+            
+            var emptyCraftableObjectIndex = craftingAuthoring.canCraftObjects.FindIndex(x => x.objectID == ObjectID.None);
+            if (emptyCraftableObjectIndex > -1)
+                craftingAuthoring.canCraftObjects[emptyCraftableObjectIndex] = craftableObject;
+            else
+                craftingAuthoring.canCraftObjects.Add(craftableObject);
+        }
     }
 }
