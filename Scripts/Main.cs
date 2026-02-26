@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace DoubleChest {
     public class Main : IMod {
-	    public const string Version = "1.0.2";
+	    public const string Version = "1.0.3";
 	    public const string InternalName = "DoubleChest";
 	    public const string DisplayName = "Paintable Double Chest";
         

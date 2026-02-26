@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 6916249868156068294}
   - component: {fileID: 5979938115927094684}
   - component: {fileID: -4356794872372460155}
-  - component: {fileID: 565179732597885773}
+  - component: {fileID: 7165901001941483276}
   m_Layer: 0
   m_Name: DoubleChestEntity
   m_TagString: Untagged
@@ -517,7 +517,7 @@ MonoBehaviour:
   - objectName: CopperBar
     amount: 5
   craftingTime: 0
---- !u!114 &565179732597885773
+--- !u!114 &7165901001941483276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -526,6 +526,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2739593553981858323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2063762086, guid: 42043b6401ecc6a4580eb3242f3c184a, type: 3}
+  m_Script: {fileID: -2063762086, guid: 4943c4e798e2e1846a9d49158ece53de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
