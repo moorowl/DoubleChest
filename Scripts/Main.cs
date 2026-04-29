@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace DoubleChest {
     public class Main : IMod {
-	    public const string Version = "1.0.3";
+	    public const string Version = "1.0.5";
 	    public const string InternalName = "DoubleChest";
 	    public const string DisplayName = "Paintable Double Chest";
         
@@ -21,10 +21,7 @@ namespace DoubleChest {
 
         public void Shutdown() { }
 
-        public void ModObjectLoaded(Object obj) {
-            if (obj is GameObject gameObject && gameObject.TryGetComponent<PooledGraphicalObject>(out var pooledGraphicalObject))
-                PooledGraphicalObjectConverter.Register(pooledGraphicalObject);
-        }
+        public void ModObjectLoaded(Object obj) { }
 
         public void Update() { }
 
