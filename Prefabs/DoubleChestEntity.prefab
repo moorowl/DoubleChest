@@ -196,6 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: -2043779946, guid: eafa8b18b36bc2c13769445b0c6b65b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useSecondInteraction: 0
+  interactSubIndex: 0
 --- !u!114 &-9073027640664013612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +495,14 @@ MonoBehaviour:
   salvageMultiplier: 1
   graphicalPrefab: {fileID: 4213435116030985893, guid: 02672cc8316a68549bf140a48b2c0994,
     type: 3}
+  graphicalRef:
+    m_address:
+      m_low: -6853275932136255401
+      m_high: 3786169564275888506
+  authoringRef:
+    m_address:
+      m_low: -2930684661209026125
+      m_high: 7872335297137510827
   isCustomScenePrefab: 0
   additionalSprites: []
 --- !u!114 &-4356794872372460155

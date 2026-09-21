@@ -17,6 +17,8 @@ namespace DoubleChest {
                 objectID = API.Authoring.GetObjectID("DoubleChest:DoubleChest"),
                 amount = 1
             });
+            
+            PugDatabase.objectsByType.Remove(new ObjectDataCD());
         }
 
         public void Shutdown() { }
@@ -26,9 +28,12 @@ namespace DoubleChest {
         public void Update() { }
 
         private static void InjectCraftableObject(ObjectID existingCraftingStation, CraftingAuthoring.CraftableObject craftableObject) {
-            var craftingStationData = DatabaseConversionUtility.GetPrefabList(Manager.ecs.pugDatabase).First(prefab => prefab.ObjectInfo.objectID == existingCraftingStation);
-            var craftingStationAuthoring = craftingStationData.ObjectInfo.prefabInfos[0].ecsPrefab;
-            if (!craftingStationAuthoring.TryGetComponent<CraftingAuthoring>(out var craftingAuthoring))
+            var craftingStationData = ScriptableData.GetDataBlocks<EntityAuthoringDataBlock>()
+                .Select(dataBlock => dataBlock.prefab?.GetComponent<IEntityMonoBehaviourData>())
+                .Where(entityMonoBehaviourData => entityMonoBehaviourData != null)
+                .First(entityMonoBehaviourData => entityMonoBehaviourData.ObjectInfo.objectID == existingCraftingStation);
+
+            if (!craftingStationData.GameObject.TryGetComponent<CraftingAuthoring>(out var craftingAuthoring))
                 return;
             
             var emptyCraftableObjectIndex = craftingAuthoring.canCraftObjects.FindIndex(x => x.objectID == ObjectID.None);
